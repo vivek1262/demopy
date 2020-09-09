@@ -2,8 +2,10 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter.filedialog import asksaveasfile
 
+
 def NewFile():
     print("New File!")
+
 
 
 def OpenFile():
@@ -29,6 +31,7 @@ filemenu.add_command(label="Open...", command=OpenFile)
 filemenu.add_separator()
 filemenu.add_command(label = "save",command = save)
 filemenu.add_command(label="Exit", command=root.quit)
+
 
 helpmenu = Menu(menu)
 menu.add_cascade(label="Help", menu=helpmenu)
